@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Membre *" android:textStyle="bold" android:textColor="#333" android:paddingBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spinnerMembre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Montant (FCFA) *" android:textStyle="bold" android:textColor="#333" android:paddingBottom="4dp"/>
+        <EditText
+            android:id="@+id/etMontantCotisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 5000"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Date" android:textStyle="bold" android:textColor="#333" android:paddingBottom="4dp"/>
+        <EditText
+            android:id="@+id/etDateCotisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="jj/mm/aaaa"
+            android:inputType="datetime"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="2" android:orientation="vertical" android:paddingEnd="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Mois" android:textStyle="bold" android:textColor="#333" android:paddingBottom="4dp"/>
+                <Spinner android:id="@+id/spinnerMois"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Année" android:textStyle="bold" android:textColor="#333" android:paddingBottom="4dp"/>
+                <EditText android:id="@+id/etAnnee"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="number" android:maxLength="4"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Note" android:textStyle="bold" android:textColor="#333" android:paddingBottom="4dp"/>
+        <EditText
+            android:id="@+id/etNoteCotisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note optionnelle"
+            android:inputType="text"/>
+    </LinearLayout>
+</ScrollView>
